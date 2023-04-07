@@ -48,14 +48,13 @@
     {width: 400px;
     background-color: aqua;}
 
-    .box001 {margin-top: 200px;}
+ .box001 {margin-top: 200px;}
  .box002 {margin-bottom: 200px;}
  .box003 {margin-left: 300px; }
- .box004 {}
+ .box004 {margin-right: 280px;}
  .box005 {padding-top: 200px;}
- .box006 {padding-bottom: 50px;}
- .box007{ padding-left: 50px;}
- .box008 {padding-right: 200px; }
+ .box007{padding-left: 50px;}
+ .box008 {padding-right: 200px;}
 
 
 
@@ -88,7 +87,7 @@
 
 <p>작성법 - color,widrh,style을 한번에 쓸수도 있고 각자쓸수도 있다.
     순번에 관계없음 <br>
-    <strong>border : red 2px solid ( 2px너비의 빨간색실선 ) </strong>
+    <strong>border : red 2px solid ( 2px너비의 빨간색실선 )</strong>
 </p>
 
 <style>
@@ -104,14 +103,160 @@ box-sizing: border-box;
 margin-bottom: 10px;}
 
  .border001 {border-top: 5px red solid;}
- .border002 {border-bottom:5px yellow solid;}
- .border003 {border-left: 10px dotted black;}
+ .border002 {border-bottom:5px solid palegreen;}
+ .border003 {border-left: 18px dotted plum;}
  .border004 {border-right: 8px dashed white }
  .border005 {border-bottom: 8px blue solid;}
- .border006 {border: 15px green}
- .border007 {border:}
+
 
 </style>
+
+
+
+<h4>코너곡선만들기-border-readius</h4>
+<p>원을 만들거나 둥근사각형을 제작할때 사용한다. <br>
+    주의사항, 짧의변의 50%를 초과하지 않는다. </p>
+
+ <div clsss="boxSet">
+
+ <div class="box1">둥근사각형1</div>
+ <div class="box2">둥근사각형2</div>
+ <div class="box3">둥근사각형3</div>
+ <div class="box4">둥근사각형4</div>
+ <div class="box5">둥근사각형5</div>
+
+
+
+ </div>
+
+<style>
+/* 후손자방식 */
+.boxSet {display: flex;}
+ .boxSet div {width:200px; height: 200px;
+background-color: beige;
+margin-right: 10px;
+text-align: center;
+padding-top: 80px;box-sizing: border-box;}
+ .box1 {border-radius: 30px;}
+ .box2 {border-radius: 50%;}
+ .box3 {border-radius: 10px 20px 30px 40px;}
+ .box4 {border-top-right-radius: 50px;}
+ .box5 {border-radius: 30px 70px 15px 50px / 70px 15px 70px 15px}
+
+
+
+/* 자손자방식 */
+ .boxSet>div {}
+ 
+
+
+</style>
+
+
+<h4>백그라운드 (배경설정)</h4>
+ <p>배경색이나 배경이미지를 삽입할때 사용한다. 많은 속성들을
+    한번에 기재할수도 있고 별도로 기재할수도 있다.
+ </p>
+
+ <ul>
+    <li>background-color : 
+        <ul>
+            <li>영문이름으로작성: red,black,white...</li>
+            <li>hex코드작성법 : #ffffff ,#00000 ,#ffff
+            반복으로 들어갈수록 레드에서 하나 그린에서 하나 블루에서 하나씩 작성가능</li>
+            <li>rgb 수치값작성 : rgvb(00,20,50)</li>
+            <li>rgb와 투명도를 같이작성: rgb(0,200,50,0,5)</li>
+        </ul>
+    </li>
+    <li>background-image : url(이미지경로작성)</li>
+<li>background-repeat:배경이미지또는 컬러를 반복한다.
+    <ul>
+        <li>repeat - 가로,세로형으로 모두 패턴처럼 깔림</li>
+        <li>repeat-x  - 가로방향으로만 깔림 </li>
+        <li>repeat-y - 세로방향으로만 깔림</li>
+        <li>no-repeat - 반복없음</li>
+    </ul>
+</li>
+<li>background-size : 배경이미지의 크기를 태그사이즈대비변경하고자 할때사용
+<ul>
+    <li>contain- 이미지의 비율을 유지하면서 영역을 꽉채움</li>
+    <li>cover - 배경이미지가 짤리더라도 화면의 영역을 꽉채움</li>
+</ul>
+</li>
+<li>background-position : top,center,left 등 위치를 지칭하는
+    단어로도 사용가능하고 숫자와단위로도 이용가능하다<br>
+    왼쪽상단에서부터 거리가 멀어지고 앞수 오른쪽으로 이동 다음수가 
+    아랫쪽으로이동(20px 60px)  
+</li>
+
+<li>background-attachment : fixed 로 바닥에 붙이는 효과<br>
+</li>
+
+
+ </ul>
+<p>그라디언트를 활용하며 배경색또는 패턴을 제작할수 있다.</p> 
+<ul>
+    <li>linear-gradient(각도,시작색깔,마지막색깔)</li>
+    <li>radial-gradient(시작색깔,마지막색깔)</li>
+    <li>patten - 직선그라데이션의 수직시작점을 % 값으로 잡아 옆에 여백을 만들어 반복시켜적용
+
+    </li>
+    
+        <li><그라디언트헌트바로가기</li>
+    
+    
+</ul>
+ <style>
+    .bg001 {background-color: rgb(200, 00,0);}
+    .bg002 {background-color: rgb(85, 44, 0);}
+    .bg003 {background-image: url(https://kormedi.com/wp-content/uploads/2023/01/unnamed-file-87.jpg);
+    height: 500px;
+background-repeat: no-repeat;
+background-size: contain ;
+background-position: center center;}
+.bg004 {background-image: url(https://img.freepik.com/premium-photo/seascape-in-the-early-morning-sunrise-over-the-sea_416511-5490.jpg);
+    height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: left bottom;
+background-attachment: fixed;}
+.bg005 {height: 1200px;}
+
+.bg005 div {height: 300px;
+border:1px solid black;
+margin-top: 20px; }
+
+.bg005 div:nth-child(1) { background:linear-gradient(0deg,#ff0000,#000000) ;}
+.bg005 div:nth-child(2) { background-image: radial-gradient(#ffff00,#0000ff) ;}
+.bg005 div:nth-child(3) { background: linear-gradient(90deg,#0f0f0f, #ff0000 ) 0 0 /20px 8px repeat;}
+
+ </style>
+
+ <div class="bg001">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vitae dolorum reiciendis omnis error, aliquid facilis, mollitia fugiat non ullam perferendis voluptatibus, consequatur suscipit possimus facere. Alias itaque enim quaerat.
+</div>
+ <div class="bg002">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic ullam, eos sint blanditiis rem dolorum? Aliquid dolores, consequuntur eum laboriosam aliquam, provident consequatur quam nisi aspernatur laudantium nemo explicabo.
+
+ </div>
+
+ <div class="bg003">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic ullam, eos sint blanditiis rem dolorum? Aliquid dolores, consequuntur eum laboriosam aliquam, provident consequatur quam nisi aspernatur laudantium nemo explicabo.
+
+</div>
+
+<div class="bg004">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic ullam, eos sint blanditiis rem dolorum? Aliquid dolores, consequuntur eum laboriosam aliquam, provident consequatur quam nisi aspernatur laudantium nemo explicabo.
+
+</div>
+
+<div class="bg005">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic ullam, eos sint blanditiis rem dolorum? Aliquid dolores, consequuntur eum laboriosam aliquam, provident consequatur quam nisi aspernatur laudantium nemo explicabo.
+<div>직선형그라디언트</div>
+<div>방사형그라디언트</div>
+<div>그라디언트활용패턴</div>
+
+</div>
 
 
 
