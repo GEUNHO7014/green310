@@ -50,8 +50,8 @@ display: inline-block;}
 
 /* 컨텍트박스 설정 */
 
-.contactBox {height: 100vh;
-    background-color: aqua;
+.Contactbox {height: 100vh;
+    background-color: blue;
 background-image: url(../img/cafe.jpg);
 background-size: cover;
 background-repeat: no-repeat;
@@ -59,10 +59,10 @@ background-position: center center;
 text-align: center;
 padding-top: 10vh;}
 
-.contactBox form {margin-top: 30px;
+.Contactbox form {margin-top: 30px;
 margin-bottom: 30px;}
 
-.contactBox input {width: 200px;
+.Contactbox input {width: 200px;
 padding: 30px 20px;
 font-size: 32px;
 border-radius: 5px;
@@ -70,14 +70,14 @@ background-color: #555;
 border: none;
 color: #fff;} 
 
-.contactBox ul {display: flex;
+.Contactbox ul {display: flex;
 list-style: none;
 justify-content: center;
 }
 
-.contactBox li a {color: #555;
+.Contactbox li a {color: #555;
 text-decoration: none;
 padding: 10px;
 display: inline-block;}
 
-.contactBox li a:hover {opacity: 0.5;}
+.Contactbox li a:hover {opacity: 0.5;}
