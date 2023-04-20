@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃005</title>
+    <!--그리드가이드연결-->
+    <link rel="stylesheet" href="css/grid-guide .css">
+    <!-- 
+        그리드가이드사용법 
+        1. 클래스이름을 활용한다.
+        2. 클래스이름은 box+숫자/대문자 로 표기한다.
+    ex)box1 ,box001 /boxA.boxB 
+        3. 형제자와 부모자, 자손자의 박스컬러가 다르다
+        4. 기본속성값을 모두 잃는다. 
+        5. 클래스명 box 내부에 자손자 박스의 요소는 적용되지 않는다.-->
+
+    
+</head>
+
+<body>
+
+<div class="boxA">
+    <div class="box1">
+        <div class="box1-1">box1</div>
+        <div class="box1-2">box2</div>
+        <div class="box1-2">box3</div>
+        <div class="box1-2">box4</div>
+
+    </div>
+    <div class="box2">box5</div>
+</div>
+<div class="boxB">box6</div>
+
+<div class="boxC">
+    <div class="box3">box7</div>
+    <div class="box4">box8</div>
+    <div class="box5">box9</div>
+    <div class="box5">box10</div>
+</div>
+<div class="boxD">
+    <div class="box3">box11</div>
+    <div class="box4">box12</div>
+    <div class="box5">box13</div>
+</div>
+
+
+<style>
+
+.boxA {display: flex;
+align-items: flex-start;}
+.boxA div {flex-grow: 1;}
+
+.boxC {display: flex;}
+.boxC div {flex-grow: 1;}
+
+
+.boxD {display: flex;}
+.boxD div {flex-grow: 1;}
+
+
+
+
+
+
+
+</style>
+
+<!--<div class="boxA">
+    <div class="boxA-1">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+    </div>
+    <div class="boxA-2"></div>
+    <div class="box5">box5</div>
+</div>
+<div class="boxB">박스6</div>
+<div class="boxC">
+    <div class="box7">박스7</div>
+    <div class="box8">박스8</div>
+    <div class="box9">박스9</div>
+    <div class="box10">박스10</div>
+</div>
+<div class="boxD">
+    <div class="box11">박스11</div>
+<div class="box12">박스12</div>
+<div class="box13">박스13</div> -->
+
+<!-- 박스 c설정 
+.boxC {display: flex;}
+.boxC div {flex-grow: 1;}
+
+.boxD {display: flex;}
+.boxD div {flex-grow: 1;}-->
+
+<!-- 부모자after 설정 float:left사용 가로정렬 
+
+boxA:after {content:'';
+display: block;
+clear:both;}
+.boxA-1 {float left;
+width 30%}
+.boxA-2 {float:left;
+width 70%}
+
+.boxC:after {content:'';
+display: block;
+clear:both;}
+boxC div {}
+-->
+
+
+
+</body>
+
+</html>

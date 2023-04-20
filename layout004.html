@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃004</title>
+    <!--그리드가이드연결-->
+    <link rel="stylesheet" href="css/grid-guide .css">
+    <!-- 
+        그리드가이드사용법 
+        1. 클래스이름을 활용한다.
+        2. 클래스이름은 box+숫자/대문자 로 표기한다.
+    ex)box1 ,box001 /boxA.boxB 
+        3. 형제자와 부모자, 자손자의 박스컬러가 다르다
+        4. 기본속성값을 모두 잃는다. 
+        5. 클래스명 box 내부에 자손자 박스의 요소는 적용되지 않는다.-->
+
+    
+</head>
+
+<body>
+
+<div class="boxA">
+    <div class="box1">로고</div>
+    <div class="box2">메뉴</div>
+</div>
+<div class="boxB">이미지슬라이드</div>
+<div class="boxC">
+    <div class="box3">공지사항</div>
+    <div class="box4">배너</div>
+    <div class="box5">바로가기</div>
+</div>
+    <div class="boxD">
+        <div class="box6">하단로고</div>
+    
+    <div class="box7-1">하단메뉴</div>
+    <div class="box7-2">카피라이트</div>
+
+
+<style>
+/* 박스C 설정 */
+
+
+.boxA {display: flex;}
+.box1 {width: 20%;}
+.box2 {width: 80%;}
+
+.boxC {display: flex;}
+.boxC div {flex-grow: 1;}
+
+.boxD {display: flex;}
+.box6 {width: 20%;}
+.box7 {width: 80%;}
+
+/* 부모자 after 정렬 float:left 사용 */
+
+/*.boxA:after {content: "";
+display: block;
+clear:both;}
+.box1 {float left;
+    width: 20%;}
+.box2 {float left;
+    width: 80%;}
+.boxC:after {content: "";
+display: block;
+clear: both;}
+.boxC div {content: "";
+display: block;
+clear: both;}
+
+.boxC div {float: left;
+width: 33.3333%;}
+.boxD {height: 450px;}
+.boxD:after {content: "";
+display: block;
+clear: both;}
+
+.box6 {float: left;
+width: 20%;
+height: 100%;}
+.box7 {float: left;
+width: 80%;
+height: 100%;}*/
+
+</style>
+
+
+
+
+
+
+</body>
+</html>
