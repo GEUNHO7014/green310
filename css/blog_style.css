@@ -1,0 +1,100 @@
+@charset 'UTF-8';
+
+/* 전체설정 */
+
+* {margin: 0;
+padding: 0;}
+ul,ol{list-style: none;}
+a {text-decoration: none;
+color: #000;}
+
+body {font-family: '맑은고딕','apple SD Gothic Neo', sans-serif;}
+
+/* 박스3과 박스4의 가로정렬 */
+.boxA {display: flex;}
+
+.box3 {width: 70%;}
+.box4 {width: 30%;}
+
+
+/* 로고설정 */
+.Logo {}
+.Logo h1 {font-weight: bold;
+font-size: 30px;}
+.Logo h1 a {}
+
+/* 메뉴설정 */
+.Menu {}
+.Menu ul  {display: flex;}
+.Menu ul li {}
+.Menu ul li a {display: block;
+padding: 5px;
+font-size: 14px;}
+.Menu ul li a:hover {background-color: #eee;}
+
+/* 기사설정 */
+.Story {}
+.Story h1 {font-size: 36px;
+margin-bottom: 20px;}
+.Story img {max-width: 100%;}
+.Story p {margin-bottom: 20px;}
+
+
+/* 특집기사 설정 */
+.Sidemenu {margin-bottom: 30px;}
+.Sidemenu h1 {font-weight: bold;
+                font-size: 18px;
+            color: #666;
+        border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.Sidemenu ul {}
+.Sidemenu ul li {}
+.Sidemenu ul li a {display: block;
+padding: 5px;
+font-size: 14px;}
+
+
+
+
+
+
+
+/* 추천기사 설정 */
+.Recommend {margin-bottom: 30px;}
+.Recommend h1 {font-weight: bold;
+                font-size: 18px;
+            color: #666;
+        border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.Recommend ul {}
+.Recommend ul li {}
+.Recommend ul li a {display: block;
+padding: 5px;
+font-size: 14px;}
+
+
+
+
+
+
+
+
+
+/* 인기기사 설정 */
+.Popular {}
+.Popular h1 {font-weight: bold;
+                font-size: 18px;
+            color: #666;
+        border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.Popularul {}
+.Popular ul li {}
+.Popular ul li a {display: block;
+padding: 5px;
+font-size: 14px;}
+
+
+
+/* 카피라이트 */
+.Copyright {font-size: 14px;
+color: #666;}
