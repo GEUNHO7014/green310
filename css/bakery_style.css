@@ -72,8 +72,7 @@ color: #fff;}
 
 .Contactbox ul {display: flex;
 list-style: none;
-justify-content: center;
-}
+justify-content: center;}
 
 .Contactbox li a {color: #555;
 text-decoration: none;
