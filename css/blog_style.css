@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&family=Paytone+One&display=swap');
 
 /* 전체설정 */
 
@@ -7,6 +8,8 @@ padding: 0;}
 ul,ol{list-style: none;}
 a {text-decoration: none;
 color: #000;}
+img {border: none;
+vertical-align: bottom;}
 
 body {font-family: '맑은고딕','apple SD Gothic Neo', sans-serif;}
 
@@ -19,25 +22,91 @@ body {font-family: '맑은고딕','apple SD Gothic Neo', sans-serif;}
 
 /* 로고설정 */
 .Logo {}
-.Logo h1 {font-weight: bold;
-font-size: 30px;}
-.Logo h1 a {}
+.Logo h1 {font-weight: normal;
+font-size: 30px;
+font-family: 'Paytone One', sans-serif;}
+.Logo h1 a {color: #83a4a8;}
 
 /* 메뉴설정 */
 .Menu {}
-.Menu ul  {display: flex;}
+.Menu ul {display: flex;}
 .Menu ul li {}
 .Menu ul li a {display: block;
-padding: 5px;
+padding: 15px;
 font-size: 14px;}
-.Menu ul li a:hover {background-color: #eee;}
+.Menu ul li a:hover {background-color: #75dbe7;}
 
 /* 기사설정 */
 .Story {}
 .Story h1 {font-size: 36px;
 margin-bottom: 20px;}
 .Story img {max-width: 100%;}
-.Story p {margin-bottom: 20px;}
+.Story p {margin-bottom: 20px;
+margin-top: 10px;}
+.Story h2 {margin-top: 40px;
+border-left: 10px solid #7cbac1;
+padding-left: 10px;
+font-weight: normal;}
+
+/* 기사의작성을 설정 */
+.Storyinfo {margin-top: -10px;
+margin-bottom: 20px;}
+
+.Storyinfo i {color: #aaa;
+font-size: 18px;}
+.Storyinfo time {}
+
+
+/* 기사의 카테고리설정 */
+.Story-cat {margin-bottom: 25px;}
+.Story-cat ul {display: flex;}
+.Story-cat ul li {margin-right: 5px;}
+.Story-cat ul li a {background-color: #75dbe7;
+font-size: 12px;
+color: #fff;
+padding: 3px 5px;
+display: block;
+border-radius: 2px;}
+
+
+/* Sns 공유설정 */
+
+.snsSet {margin-top: 40px;}
+.snsSet ul {display: flex;}
+.snsSet ul li {width: 33.3333%;}
+.snsSet ul li a {display: block;
+                        text-align: center;
+                    padding: 5px;
+                font-size: 14px;
+            color: #fff;}
+
+.snsSet li:nth-child(1) a {background-color: #1da1f2;}
+.snsSet li:nth-child(2) a {background-color: #1877f2;}
+.snsSet li:nth-child(3) a {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,f77737+0,833ab4+100 */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(left,  #1e5799 0%, #f77737 0%, #833ab4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #1e5799 0%,#f77737 0%,#833ab4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #1e5799 0%,#f77737 0%,#833ab4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#833ab4',GradientType=1 ); /* IE6-9 */
+    }
+    
+    
+
+.Ralation {background-color: #f0f0d4;
+padding: 20px;
+margin-top: }
+.Ralation h1 {color: #727224;
+font-size: 20px;
+font-weight: normal;
+margin-bottom: 5px;}
+.Ralation ul {display: flex;
+flex-wrap: wrap;}
+.Ralation ul li {width: 25%;}
+.Ralation ul li a {display: block;
+padding: 5px;
+font-size: 14px;}
+.Ralation img {max-width: 100%;}
+.Ralation .txt {}
 
 
 /* 특집기사 설정 */
@@ -54,6 +123,10 @@ padding: 5px;
 font-size: 14px;}
 
 
+.Sidemenu i {color: #888;
+margin-right: 5px;}
+
+
 
 
 
@@ -67,13 +140,22 @@ font-size: 14px;}
         border-bottom: dotted 2px #ddd;
     margin-bottom: 10px;}
 .Recommend ul {}
-.Recommend ul li {}
+.Recommend ul li {margin-bottom: 10px;}
 .Recommend ul li a {display: block;
-padding: 5px;
-font-size: 14px;}
+font-size: 14px;
+position: relative;}
 
+.Recommend img {width: 100%;
+vertical-align: top;}
 
-
+.Recommend .txt {background-color: rgba(0, 0, 0,0.8);
+color: #fff;
+padding: 5px 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+box-sizing: border-box;}
 
 
 
@@ -87,14 +169,68 @@ font-size: 14px;}
             color: #666;
         border-bottom: dotted 2px #ddd;
     margin-bottom: 10px;}
-.Popularul {}
+.Popular ul {}
 .Popular ul li {}
 .Popular ul li a {display: block;
 padding: 5px;
+font-size: 14px;
+border-bottom: dotted 1px #ddd;
+color: #2288bb;
 font-size: 14px;}
 
+.Popular a:after {content: "";
+display: block;
+clear: both;} 
+.Popular img {border: none;
+float: left;
+width: 60px;}
+.Popular .txt {float: none;
+width: auto;
+margin-left: 15px;
+padding-left: 60px;
+}
+
+
+
+.Popular span {color: #666;
+font-size: 12px;
+display: block;}
 
 
 /* 카피라이트 */
 .Copyright {font-size: 14px;
 color: #666;}
+
+
+/* 박스2를 바 형태로 디자인하기 */
+
+.box2 {background-color: #7cbac1;}
+
+/* 박스5 위에 테두리삽입 */
+.box5 {border-top: 1px solid #ddd;}
+
+/* 박스위아래간격설정 */
+
+.box1 {padding-top: 8px;
+padding-bottom: 8px;}
+
+.box3 {padding-top: 40px;
+padding-bottom: 30px;}
+
+.box4 {padding-top: 40px;
+padding-bottom: 30px;}
+
+.box5 {padding-top: 15px;
+padding-bottom: 15px;}
+
+/* 박스3과 박스4의 좌우간격 */
+.box3 {padding-right: 50px;
+box-sizing: border-box;}
+
+
+
+/* 화면에 크기설정및 가운데배치 */
+
+.box1,.boxA,.Menu,.Copyright {width: 1000px;
+margin: 0 auto;} 
+
