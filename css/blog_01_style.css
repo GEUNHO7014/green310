@@ -65,3 +65,35 @@ color: #fff;}
 
 
 .snsSet {}
+
+
+
+@media (max-width:599px) {
+
+.snsSet {display: none;
+text-indent: -9999px;
+}
+
+
+}
+
+
+
+@media (min-width: 699px) and (max-width: 1010px) {
+
+
+.box4,.boxA {display: flex;}
+.box4-1 {width: 50%;}
+.box4-2 {width: 50%;}
+
+
+
+}
+
+
+@media (max-width 770px) {
+
+.box1, .boxA, .box4-1, .box4-2 {}
+
+}
+

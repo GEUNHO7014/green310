@@ -13,11 +13,6 @@ vertical-align: bottom;}
 
 body {font-family: '맑은고딕','apple SD Gothic Neo', sans-serif;}
 
-/* 박스3과 박스4의 가로정렬 */
-.boxA {display: flex;}
-
-.box3 {width: 70%;}
-.box4 {width: 30%;}
 
 
 /* 로고설정 */
@@ -223,14 +218,91 @@ padding-bottom: 30px;}
 .box5 {padding-top: 15px;
 padding-bottom: 15px;}
 
+
+
+
+/* 박스의왼쪽 오른쪽 공백확보 */
+
+.box1,.boxA,.Copyright {padding-left: 10px;
+padding-right: 10px;}
+
+
+/* 미디어쿼리구간설정/////////////////////// */
+
+
+
+/* 1. 모바일구간 
+600px 이하구간////////////////////*/
+@media (max-width:599px){
+
+
+/* 메뉴설정 */
+.Menu ul {display: flex;}
+.Menu ul li {}
+.Menu ul li a {display: block;
+padding: 15px;
+font-size: 14px;}
+.Menu ul li a:hover {background-color: #75dbe7;}
+
+
+/* css 설정구간 */
+
+/* snsSet 설정 */
+.snsSet span {text-indent: -9999px;
+display: inline-block;} 
+
+/* 관련기사설정 */
+.Ralation ul li {width: 50%;}
+
+}
+
+/* 2. 태블릿 이하구간
+600px~ 767px 까지 구간/////////// */
+@media (min-width:600px) and (max-width:767px) {
+
+
+
+/* CSS 설정구간 */
+/* 박스4-1과 박스4-2의 가로정렬 */
+.box4 {display: flex;}
+.box4-1 {width: 50%;}
+.box4-2 {width: 50%;}
+
+}
+
+
+/* 3. 태블릿~데스크탑구간 768 이상구간 */
+@media (min-width:768px) {
+
+
+
+    /* CSS 설정구간 */
+/* 박스3과 박스4의 가로정렬 */
+.boxA {display: flex;}
+
+.box3 {width: 70%;}
+.box4 {width: 30%;}
+
 /* 박스3과 박스4의 좌우간격 */
 .box3 {padding-right: 50px;
 box-sizing: border-box;}
 
 
+}
+
+
+
+/* 4. 일정크기 가로값 변동없는 구간 1040px 이상/// */
+
+
+@media (min-width:1040px) {
 
 /* 화면에 크기설정및 가운데배치 */
 
 .box1,.boxA,.Menu,.Copyright {width: 1000px;
 margin: 0 auto;} 
+
+
+
+}
 

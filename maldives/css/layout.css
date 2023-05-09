@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+* {margin: 0; padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none; 
+color: #555;}
+img {border: none;
+vertical-align: bottom;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article:nth-child(1) {background-color: #ddd;
+width: 60%; height: 540px;}
+article:nth-child(2) {background-color: #aaa;
+width: 40%;}
+article:nth-child(3) {background-color: #bbb;}
+article:nth-child(4) {background-color: #ccc;}
+article:nth-child(5) {background-color: #999;}
+article:nth-child(6) {background-color: #888;
+width: 40%;}
+article:nth-child(7) {background-color: #777;}
+article:nth-child(8) {background-color: #666;}
+article:nth-child(9) {background-color: #555;
+width: 60%;}
+article:nth-child(10) {background-color: #444;}
+article:nth-child(11) {background-color: #333;}
+article:nth-child(12) {background-color: #222;}
+
+
+
