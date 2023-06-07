@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do it</title>
+
+
+<style>
+
+*{margin: 0;
+padding: 0;}
+
+body {background-color: black;
+color: #fff;}
+
+.info {background-color: rgba(255, 255, 255, 0.6);
+position: fixed;
+right: 10px;
+top: 10px;
+padding: 10px;
+}
+
+.info span {display: block;
+}
+
+.info em {color: #000;}
+
+.box {width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 180px;
+font-style: italic;
+}
+
+.wrap {}
+
+.wrap section {width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 120px;
+position: relative;
+opacity: 0;
+transition: all 0.6s;
+
+}
+
+.wrap section img {position: absolute;}
+
+.wrap section:nth-child(1) img {left: 100px;
+top:100px}
+
+.wrap section:nth-child(2) img {right: 150px;
+top:180px}
+
+.wrap section:nth-child(3) img {left: 300px;
+bottom:100px;}
+
+.wrap section:nth-child(4) img {right: 250px;
+top:222px}
+
+</style>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+
+
+
+$(window).scroll(function(){
+
+// offset값을 활용하여 현재 section 위치값 구하기
+
+let sec1 = $('.wrap section').eq(0).offset().top
+let sc = $(this).scrollTop()
+console.log(sc)
+
+// scrollTop 값 구하기
+
+$('.info span').eq(0).find('em').text(sec1);
+
+if(sc>=sec1-100){
+
+$('.wrap section').eq(0).css({'opacity':1});
+
+}
+
+})
+
+})
+
+</script>
+
+
+
+
+</head>
+<body>
+
+<div class="info">
+    <span>섹션1: <em>00</em>
+    </span>
+    <span>섹션2: <em>00</em>
+    </span>
+    <span>섹션3: <em>00</em>
+    </span>
+    <span>섹션4: <em>00</em>
+    </span>
+</div>
+<div class="box">WebdDesign</div>
+
+<div class="wrap">
+    
+    <section>화면보기1
+        <img src="slide/img/0.png" alt="">
+    </section>
+    <section>화면보기2
+        <img src="slide/img/1.png" alt="">
+    </section>
+    <section>화면보기3
+        <img src="slide/img/2.png" alt="">
+    </section>
+    <section>화면보기4
+        <img src="slide/img/asnl.jpg" alt="">
+    </section>
+
+</div>
+
+</body>
+</html>

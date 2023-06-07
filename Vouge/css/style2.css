@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+*{margin: 0;
+padding: 0;}
+
+ul,ol {list-style: none;}
+a {color: #000;
+text-decoration: none;}
+
+img {vertical-align: bottom;}
+
+
+#wrap2 {position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: salmon;
+min-width: 1024px;
+min-height: 768px;
+perspective: 900;
+}
+
+#wrap em {position: fixed;
+width: 50px;
+height: 50px;
+background-color: saddlebrown;
+z-index: 999;
+left: 40px;}
+
+
