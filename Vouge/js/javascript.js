@@ -12,11 +12,35 @@ $('#wrap section').addClass('on')
 
 $(this).fadeOut(600) 
 
+});
 
+
+// gnb의 li를 클릭했을 때, 본인의 순번을 찾고 
+// section의 div의 순번에 맞추어 on 값을 주어라.
+
+$('.gnb li').click(function(){
+
+let i = $(this).index()
+console.log(i);
+
+$('section div').removeClass('on')
+
+$('section div').eq(i).addClass('on');
+
+$('#wrap nav').removeClass('on');
+
+$('#wrap section').removeClass('on');
+
+$('#wrap em').fadeIn()
 
 
 
 })
+
+
+
+
+
 
 
 })
