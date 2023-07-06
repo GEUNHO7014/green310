@@ -6,6 +6,7 @@ let ht = $(window).height();
 $('section').height(ht)
 
 
+
 $(window).resize(function(){
 
     let ht = $(window).height();
@@ -60,7 +61,6 @@ $('html,body').stop().animate({scrollTop:next},1400)
 
 
 })
-
 
 
 // 예제 윈도우에서 마우스를 올렸을 때 , 마우스올림 글씨출력

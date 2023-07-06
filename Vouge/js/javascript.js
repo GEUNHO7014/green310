@@ -33,14 +33,6 @@ $('#wrap section').removeClass('on');
 
 $('#wrap em').fadeIn()
 
-
-
 })
-
-
-
-
-
-
 
 })

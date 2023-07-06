@@ -31,6 +31,7 @@ perspective: 900px;
 
 /* 메뉴버튼설정 */
 
+
 #wrap em {width: 50px;
 height: 50px;
 background-color: #fff;
@@ -41,11 +42,10 @@ z-index: 999;
 display: inline-block;
 animation: ani 0.5s infinite alternate;
 
-
 }
 
-
 /* 메뉴버튼 움직이게 설정하기 */
+
 
 @keyframes ani {
 
@@ -60,8 +60,6 @@ animation: ani 0.5s infinite alternate;
     opacity: 0.8;
     
 }
-
-
 
 
 
@@ -147,7 +145,6 @@ transition: all 1.5s;
 z-index: 2;
 
 }
-
 
 
 
@@ -288,11 +285,16 @@ height: 50%;}
 .girl>p:nth-child(10){background-color: #444;}
 .girl>p:nth-child(11){background-color: #333;}
 
+
+
+
 /* kids 박스 설정 */
 
 .kids>p {float: left;
 width: 25%;
 height: 25%;}
+
+
 
 .kids>p:nth-child(1) {background-color: #ddd;
 width: 50%;

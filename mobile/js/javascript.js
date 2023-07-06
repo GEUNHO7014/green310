@@ -18,10 +18,7 @@ setInterval(function(){
     $('p span').eq(1).text(min);
     $('p span').eq(2).text(sec)
 
-
 },1000);
-
-
 
 // nav의 li를 클릭했을때 마다 class 값이 바뀌어라.
 
@@ -62,8 +59,7 @@ $('nav li').eq(0).click(function(){
             $('#wrap').removeClass()
             $('#wrap').addClass('evening')
             
-            
-            
+        
             
             })
             
@@ -86,8 +82,6 @@ $('nav li').eq(0).click(function(){
 
                     $('#wrap').removeClass()
                     $('#wrap').addClass('evening')
-                    
-                    
                     
                     
                     })
