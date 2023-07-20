@@ -31,7 +31,6 @@ perspective: 900px;
 
 /* 메뉴버튼설정 */
 
-
 #wrap em {width: 50px;
 height: 50px;
 background-color: #fff;
@@ -46,7 +45,6 @@ animation: ani 0.5s infinite alternate;
 
 /* 메뉴버튼 움직이게 설정하기 */
 
-
 @keyframes ani {
 
     0% {transform: scale(1);
@@ -60,9 +58,6 @@ animation: ani 0.5s infinite alternate;
     opacity: 0.8;
     
 }
-
-
-
 
 }
 
@@ -79,7 +74,6 @@ transition: all 0.8s;
 transform:rotateY(120deg);
 transform-origin: left;
 opacity: 0;
-
 
 }
 
@@ -137,10 +131,6 @@ transition: all 1.5s;
 }
 
 
-
-
-
-
 #wrap section>div.on {opacity: 1;
 z-index: 2;
 
@@ -152,11 +142,9 @@ z-index: 2;
 
 #wrap nav.on {transform:rotateY(15deg);
 opacity: 1;
-
 }
 
 #wrap section.on {transform:rotateY(-10deg);}
-
 
 /* 박스설정 */
 
@@ -180,11 +168,7 @@ color: #fff;
 font-size: 20px;
 color: #eee;
 }
-
-
 #wrap section>div.on>p {transform: rotateY(0deg);}
-
-
 
 /* homme 박스설정 */
 

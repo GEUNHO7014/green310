@@ -29,8 +29,6 @@ $('section>img').hide();
 
 $('section>img').eq(percent).show()
 
-
 })
-
 
 })
