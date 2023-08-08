@@ -18,6 +18,7 @@ img {vertical-align: bottom;}
     /* 레이아웃이 틀어짐을 방지하고 
     일정넓이와 높이 이하로는 콘텐츠가 줄어들지 않도록 설정하기 위해 
     최소값을 정해준다. */
+
 min-width: 1024px;
 min-height: 768px;
 height: 100%;
@@ -137,12 +138,12 @@ z-index: 2;
 }
 
 
-
 /* 변환모습 */
 
 #wrap nav.on {transform:rotateY(15deg);
 opacity: 1;
 }
+
 
 #wrap section.on {transform:rotateY(-10deg);}
 
@@ -200,6 +201,7 @@ background-image: url(../img/m2.jpg);
 background-position: center top;
 background-repeat: no-repeat;
 background-size: cover;
+
 }
 
 .homme>p:nth-child(5) {background-color: #fff;
@@ -239,6 +241,7 @@ background-image: url(../img/m5.jpg);
 background-position: left center;
 background-repeat: no-repeat;
 background-size: cover;
+
 }
 
 .homme>p:nth-child(11) {background-color: #333;
@@ -270,16 +273,11 @@ height: 50%;}
 .girl>p:nth-child(11){background-color: #333;}
 
 
-
-
 /* kids 박스 설정 */
 
 .kids>p {float: left;
 width: 25%;
 height: 25%;}
-
-
-
 .kids>p:nth-child(1) {background-color: #ddd;
 width: 50%;
 height: 100%;

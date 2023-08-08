@@ -109,6 +109,10 @@ padding: 10px 0;
 text-align: center;}
 
 
+
+
+
+
 /* 움직이는 구름설정 */
 
 .c1 {position: absolute;
@@ -135,7 +139,6 @@ text-align: center;}
 
 }
 
-
 @keyframes kh3 {
     0% {left: -600px;}
     100% {left: 600px;}
@@ -148,6 +151,20 @@ text-align: center;}
     100% {left: 0;}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 모바일 구름 설정 */
 
@@ -186,7 +203,5 @@ z-index: -1;
 
 #wrap h1.evening {background-image: url(../img/bg_evening.jpg);}
 #wrap h1.evening {background-image: url(../img/logo_w.png);}
-
-
 
 article>p>strong {}

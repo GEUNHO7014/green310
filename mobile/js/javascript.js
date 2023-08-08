@@ -27,17 +27,12 @@ $('nav li').eq(0).click(function(){
 $('#wrap').removeClass()
 $('#wrap').addClass('afternoon')
 
-
-
-
 })
 
 $('nav li').eq(0).click(function(){
 
     $('#wrap').removeClass()
     $('#wrap').addClass('morning')
-    
-    
     
     
     })
@@ -99,4 +94,8 @@ $('nav li').eq(0).click(function(){
 
 
 })
+
+
+
+    
 
